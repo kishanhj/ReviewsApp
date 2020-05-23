@@ -1,8 +1,9 @@
 import React from 'react';
-import {  Button, TextInput, View, Keyboard, TouchableWithoutFeedback, Text } from 'react-native';
+import {   TextInput, View, Keyboard, TouchableWithoutFeedback, Text } from 'react-native';
 import { globalStyles } from '../shared/globalCSS';
 import { Formik } from 'formik';
 import * as yup from 'yup';
+import Button from '../shared/Button'
 
 const reviewSchema = yup.object({
   title : yup.string()
@@ -59,7 +60,7 @@ export default function ReviewForm({addReview}) {
               onBlur = {props.handleBlur('rating')}
             />
             <Text style={globalStyles.error}> {props.touched.rating && props.errors.rating} </Text>
-            <Button color='maroon' title="Submit" onPress={props.handleSubmit} /> 
+            <Button  title="submit" clickHandler={props.handleSubmit} /> 
           </View>
         )}
       </Formik>
