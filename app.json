@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Reviews app built with react native. \nfollowing techNinja channel in youtube.",
+    "githubUrl": "https://github.com/kishanhj/ReviewsApp.git"
   }
 }
